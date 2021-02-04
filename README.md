@@ -1,2 +1,2 @@
 # SITACrowdsourcing
-To collent data for training chatbot model
+To collect data for training chatbot model
