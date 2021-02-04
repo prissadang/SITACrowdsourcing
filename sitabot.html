@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IBM Watson Assistant for Citizens
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+    }
+
+    .bg {
+      /* The image used */
+      background-image: url("Watson_Still_04.png");
+
+      /* Full height */
+      height: 100%;
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .chatElement {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bg">
+    <div class="chatElement"></div>
+  </div>
+
+  <script src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js"></script>
+  <script>
+    const element = document.querySelector('.chatElement');
+    window.loadWatsonAssistantChat({
+      integrationID: "e3979c71-48fd-4995-9922-5c86c0feadfa", // The ID of this integration.
+      element: element,
+      region: "us-south", // The region your integration is hosted in.
+      openChatByDefault: true
+    }).then(function(instance){
+      instance.render();
+    });
+  </script>
+  </head>
+
+  <body>
+
+    <body style="background-color:#eeeeee">
+    </body>
+
+</html>
