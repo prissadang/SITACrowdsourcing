@@ -73,7 +73,8 @@ hr {
 }
 #menu a.navbar-brand {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 32px;
+	/* font-size: 32px; */
+	font-size: 40px;
 	font-weight: 700;
 	color: #1f386e;
 	text-transform: uppercase;
@@ -109,6 +110,20 @@ hr {
 	display: block;
 	color: #1f386e;
 }
+#menu .fullname {
+	font-family: 'Montserrat', sans-serif;
+	margin: 4px 0 0 30px;
+	float: left;
+	font-size: 16px;
+	font-weight: 400;
+	color: #999;
+}
+#menu .fullname span {
+	font-size: 14px;
+	display: block;
+	color: #1f386e;
+}
+
 .navbar-toggle {
 	border-radius: 0;
 }
@@ -168,16 +183,17 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .intro {
 	display: table;
 	width: 100%;
+	height: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) center center no-repeat;
+	background: url(../img/intro-bg-brain.jpg) center center no-repeat; 
 	background-color: #e5e5e5;
+	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
-	background-size: cover;
 	-o-background-size: cover;
 }
 .intro .overlay {
-	background: rgba(0,0,0,0.3);
+	background: rgba(0,0,0,0.0);
 }
 .intro h1 {
 	font-family: 'Montserrat', sans-serif;
@@ -186,7 +202,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	font-weight: 700;
 	margin-top: 0;
 	margin-bottom: 10px;
-	text-shadow: 0 0 15px rgba(0,0,0,0.5)
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.5)
 }
 .intro p {
 	color: #fff;
@@ -196,11 +212,11 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	max-width: 600px;
 	margin: 0 auto;
 	margin-bottom: 40px;
-	background: rgba(0,0,0,.45);
+	background: rgba(169, 210, 238, 0.45);
 }
 header .intro-text {
-	padding-top: 350px;
-	padding-bottom: 150px;
+	padding-top: 200px;
+	padding-bottom: 100px;
 	text-align: center;
 }
 /* Get Touch Section */
@@ -227,7 +243,7 @@ header .intro-text {
 }
 /* About Section */
 #about {
-	padding: 110px 0;
+	padding: 50px 0;
 	background: #f6f6f6;
 }
 #about h3 {
@@ -509,4 +525,13 @@ color: #777;
 #about img {
 	margin: 50px 0;
 }
+}
+
+df-messenger {
+	--df-messenger-bot-message: #878fac;
+	--df-messenger-button-titlebar-color: #df9b56;
+	--df-messenger-chat-background-color: #fafafa;
+	--df-messenger-font-color: white;
+	--df-messenger-send-icon: #878fac;
+	--df-messenger-user-message: #479b3d;
 }
