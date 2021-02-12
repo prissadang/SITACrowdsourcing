@@ -117,14 +117,22 @@
       <h2>Our Research</h2>
     </div>
     
-    <df-messenger
-      intent="WELCOME"
-      chat-title="SITA"
-      agent-id="c663be9c-8e0e-4ebb-9276-9dfaee4ae53d"
-      chat-icon="img/robot.png"
-      language-code="en"></df-messenger>
+
+    <!-- This is the main code for chatbot  -->
+    <ul class="a-tag-chat-preview">
+      <li>
+        <a href="https://bot.dialogflow.com/c663be9c-8e0e-4ebb-9276-9dfaee4ae53d" >
+          Preview SITA powered by DialogFlow
+        </a></li>
+      <li>
+        <a href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=bc74056a-f44d-4034-978b-0cf3f3fc5934&serviceInstanceID=3ce88f48-16c7-484a-abce-8b4fc42a9654" >
+          Preview SITA powered by IBM Watson Assistant
+        </a>
+      </li>
+    </ul>
 
     
+
   </div>
 </div>
 <!-- Gallery Section -->
@@ -199,18 +207,11 @@
 <!-- DialogFlow - SITA
     ================================================== -->
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<script>
-  window.watsonAssistantChatOptions = {
-      integrationID: "1b478bbb-f200-4616-81f2-d6002389b21f", // The ID of this integration.
-      region: "au-syd", // The region your integration is hosted in.
-      serviceInstanceID: "e807894d-5eac-495a-8e31-dab7aa3046d6", // The ID of your service instance.
-      onLoad: function(instance) { instance.render(); }
-    };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
-    document.head.appendChild(t);
-  });
-</script>
+
+<!-- IBM Watson - SITA
+    ================================================== -->
+
+
+
 </body>
 </html>

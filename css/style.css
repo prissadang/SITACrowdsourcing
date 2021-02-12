@@ -534,4 +534,13 @@ df-messenger {
 	--df-messenger-font-color: white;
 	--df-messenger-send-icon: #878fac;
 	--df-messenger-user-message: #479b3d;
+
+}
+
+ul.a-tag-chat-preview {
+	font-size: large;
+	color: #4285F4;
+	list-style-type: square;
+	display: inline-block; /* Needed to add space between the bullet and the text */ 
+
 }
