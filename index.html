@@ -199,6 +199,18 @@
 <!-- DialogFlow - SITA
     ================================================== -->
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "1b478bbb-f200-4616-81f2-d6002389b21f", // The ID of this integration.
+      region: "au-syd", // The region your integration is hosted in.
+      serviceInstanceID: "e807894d-5eac-495a-8e31-dab7aa3046d6", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
 </body>
 </html>
