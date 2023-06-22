@@ -117,40 +117,7 @@
       <h2>Our Research</h2>
     </div>
     
-    <!-- This is the main code for chatbot  -->
-    <div>
-      <table>
-        <tr>
-          <td>
-            <ul class="a-tag-chat-preview">
-              <li>
-                <a href="https://web-chat.global.assistant.watson.cloud.ibm.com/preview.html?region=us-south&integrationID=bc74056a-f44d-4034-978b-0cf3f3fc5934&serviceInstanceID=3ce88f48-16c7-484a-abce-8b4fc42a9654" >
-                  Preview SITA powered by IBM Watson Assistant
-                </a>
-              </li>
-          </ul></td>
-
-        </tr>
-        <tr>
-          <td>
-            <ul class="a-tag-chat-preview">
-              <li>
-                <a href="https://bot.dialogflow.com/c663be9c-8e0e-4ebb-9276-9dfaee4ae53d" >
-                  Preview SITA powered by DialogFlow
-                </a>
-              </li>
-            </ul><br>
-            <iframe
-              allow="microphone;"
-              width="350"
-              height="430"
-              src="https://console.dialogflow.com/api-client/demo/embedded/c663be9c-8e0e-4ebb-9276-9dfaee4ae53d">
-            </iframe>
-          </td>
-
-        </tr>
-      </table>
-    </div>
+    
     
 
     
@@ -205,7 +172,7 @@
           Thung Khru, Bangkok 10140</p>
       </div>
       <div class="contact-item">
-        <p><span>Email</span>sitacademyth@gmail.com</p>
+        <p><span>E-mail</span>prissadang.suta01@kmutt.ac.th</p>
       </div>
     </div>
 
@@ -215,7 +182,7 @@
 <!-- Footer Section -->
 <div id="footer">
   <div class="container text-center">
-    <p>&copy; 2021 School of Information Technology Academy (SITA), School of Information Technology, King Mongkut's University of Technology Thonburi. <a href="https://www.sit.kmutt.ac.th" rel="nofollow">SIT</a></p>
+    <p>&copy; 2023 School of Information Technology Academy (SITA), School of Information Technology, King Mongkut's University of Technology Thonburi. <a href="https://www.sit.kmutt.ac.th" rel="nofollow">SIT</a></p>
   </div>
 </div>
 <script type="text/javascript" src="js/jquery.1.11.1.js"></script> 
@@ -229,22 +196,16 @@
 <!-- DialogFlow - SITA
     ================================================== -->
 <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  intent="WELCOME"
+  chat-title="SITA"
+  agent-id="c663be9c-8e0e-4ebb-9276-9dfaee4ae53d"
+  language-code="en"
+></df-messenger>
 
 <!-- IBM Watson - SITA
     ================================================== -->
-<script>
-  window.watsonAssistantChatOptions = {
-      integrationID: "b1bba29b-d9f6-4657-9bae-27463211303c", // The ID of this integration.
-      region: "us-south", // The region your integration is hosted in.
-      serviceInstanceID: "3ce88f48-16c7-484a-abce-8b4fc42a9654", // The ID of your service instance.
-      onLoad: function(instance) { instance.render(); }
-    };
-  setTimeout(function(){
-    const t=document.createElement('script');
-    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
-    document.head.appendChild(t);
-  });
-</script>
+
 
 
 </body>
